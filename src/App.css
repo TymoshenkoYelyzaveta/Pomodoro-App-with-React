@@ -47,16 +47,14 @@ h2 {
   color: #617999;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  padding: 10px 30px;
+  padding: 10px 30px 5px 30px;
   cursor: pointer;
   transition: 0.3s ease all;
 }
 
 .buttons button:hover {
-  border-radius: 10px;
-  background: #f5f8ca;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
+  background: #617999;
+  color: #f9f9f9;
 }
 
 .buttons button:not(:last-child) {
