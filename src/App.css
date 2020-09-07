@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inconsolata", monospace;
+  line-height: 1.5;
+}
+
+.app {
+  min-height: 100vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #617999;
+}
+
+h2 {
+  color: #f9f9f9;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.timer {
+  color: #617999;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  overflow: hidden;
+  font-size: 150px;
+  margin-bottom: 20px;
+  padding: 5px 20px;
+}
+
+.buttons button {
+  outline: none;
+  border: none;
+  font-size: 24px;
+  background: #f9f9f9;
+  color: #617999;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.buttons button:hover {
+  border-radius: 10px;
+  background: #f5f8ca;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.buttons button:not(:last-child) {
+  margin-right: 10px;
+}
+
+@media (max-width: 780px) {
+  h2 {
+    font-size: 22px;
+  }
+
+  .timer {
+    font-size: 80px;
+  }
+
+  .buttons button {
+    font-size: 18px;
+  }
+}
